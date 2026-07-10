@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= product.name %></title>
+</head>
+<body>
+    <h1><%= product.name %></h1>
+    <img src="<%= product.imageUrl %>" alt="<%= product.name %>" width="300"/>
+    
+    <h3>Uses:</h3>
+    <ul>
+        <% product.uses.forEach(function(use){ %>
+            <li><%= use %></li>
+        <% }); %>
+    </ul>
+
+    <h3>Benefits:</h3>
+    <ul>
+        <% product.benefits.forEach(function(benefit){ %>
+            <li><%= benefit %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
